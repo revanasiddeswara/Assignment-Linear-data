@@ -132,6 +132,9 @@ towerOfHanoi(numDiscs, sourceRod, auxiliaryRod, destinationRod);
 
 //---------------------Question 6 ------------------------------------------------
 // Q6. Read about infix, prefix, and postfix expressions. Write a program to convert postfix to prefix expression.
+// Answer : Infix Expression: This is the common notation used by humans, where operators are placed between operands. For example: 2 + 3 * 4. 
+//          Prefix Expression: In this notation, operators are placed before the operands. For example: + 2 * 3 4.
+//          Postfix Expression: Also known as Reverse Polish Notation (RPN), this notation places operators after their operands. For example: 2 3 4 * +.
 function isOperator(char) {
     return char === '+' || char === '-' || char === '*' || char === '/';
 }
@@ -154,7 +157,8 @@ function postfixToPrefix(postfix) {
 const postfixExpression = "23*5+";
 const prefixExpression = postfixToPrefix(postfixExpression);
 console.log("-------------------------Question 6--------------------------------");
-console.log("--------Infix Expression: This is the common notation used by humans, where operators are placed between operands. For example: 2 + 3 * 4.Prefix Expression: In this notation, operators are placed before the operands. For example: + 2 * 3 4. ");
+console.log("Infix Expression: This is the common notation used by humans, where operators are placed between operands. For example: 2 + 3 * 4.");
+console.log("Prefix Expression: In this notation, operators are placed before the operands. For example: + 2 * 3 4.");
 console.log("Postfix Expression: Also known as Reverse Polish Notation (RPN), this notation places operators after their operands. For example: 2 3 4 * +.");
 console.log("output for Postfix Expression:", postfixExpression);
 console.log("output for Prefix Expression:", prefixExpression);
